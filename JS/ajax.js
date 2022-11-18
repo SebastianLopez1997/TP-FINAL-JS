@@ -1,3 +1,4 @@
+/// SE OBTIENE DEL JSON CREADO MANUEALMENTE LOS DATOS DE MIS EMPLEADO ( API ) 
 function obtenerDatosJson(){
     const URLJSON="/users.json";
     fetch(URLJSON)

@@ -20,7 +20,7 @@ boton.onclick = () => {
         document.body.className = "dark";
         princi.classList.remove("light");
         princi.classList.add("dark");
-        boton.innerText = "Light modo";
+        boton.innerText = "Light mode";
         modo = "dark";
     } else {
         document.body.className = "light";
