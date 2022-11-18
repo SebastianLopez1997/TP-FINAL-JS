@@ -1,0 +1,31 @@
+{
+    "empleados": [{
+            "nombre" : "Lucia Molinere",
+            "edad" : 28,
+            "puesto" : "CEO",
+            "antiguedad": 8,
+            "imagen" : "./Imagenes/Lu.jpg"
+        },
+        {
+            "nombre" : "Martin chuck",
+            "edad" : 26,
+            "puesto" : "Supervisor",
+            "antiguedad": 7,
+            "imagen" : "./Imagenes/martin.jpg"
+        },
+        {
+            "nombre" : "Erica Panele",
+            "edad" : 25,
+            "puesto" : "Cajera",
+            "antiguedad": 7,
+            "imagen" : "./Imagenes/erica.jpg"
+        },
+        {
+            "nombre" : "Lucas Sarobi",
+            "edad" : 19,
+            "puesto" : "Seguridad",
+            "antiguedad": 1,
+            "imagen" : "./Imagenes/sarobe.jpg"
+        }
+    ]
+}

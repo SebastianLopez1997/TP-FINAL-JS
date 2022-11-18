@@ -36,7 +36,7 @@ Renderizado();
 function agregarAlcarrito(productoAcomprar) {
     carrito.push(productoAcomprar);
     console.table(carrito);
-    Swal.fire({
+    setTimeout (()=> { Swal.fire({
         title: productoAcomprar.nombre,
         text: `se agrego al carrito`,
         imageUrl:  productoAcomprar.imagen,
@@ -44,13 +44,13 @@ function agregarAlcarrito(productoAcomprar) {
         imageWidth: 200,
         imageHeight: 200,
         imageAlt: productoAcomprar.nombre,
-    });
+    })},0300)
     document.getElementById("tablabody").innerHTML += `
         <tr>
             <td>${productoAcomprar.id} </td>
             <td>${productoAcomprar.nombre} </td>
             <td>${productoAcomprar.precio} </td>
-            <td><button class="delete btn btn-danger" id="kick${productoAcomprar.id}">Eliminar del carrito</button> </td>
+            <td><button class="delete btn btn-danger" id="kick">Eliminar del carrito</button> </td>
         </tr>
     `;
     let totalCarrito = carrito.reduce((acumulador, prod) => acumulador + prod.precio, 0);
@@ -71,13 +71,15 @@ boton2.onclick = () => {
 
 
 function FinalizarCompra() {
+    totalCarrito = 0
+    document.getElementById("total").innerText = "Total a pagar: $ " + totalCarrito;
     document.getElementById("tablabody").innerHTML = ` `
+    const eliminados=carrito.splice(0);
 }
 
-const eliminar = document.getElementById("kick${productoAcomprar.id}")
+const eliminar = document.getElementById(`kick`)
 
 eliminar.onclick = () => {
-    eliminar.addEventListener(`click`,alert("Eliminado pau")) 
-    console.log("Se apreto")
-    Swal.fire("Se elimino el producto del carrito")
+    carrito.splice(productoAcomprar.id)
+    console.log("eliminado")
 }
