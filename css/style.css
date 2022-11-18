@@ -1,0 +1,68 @@
+body {
+    background-color: rgb(186, 188, 188);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+h4 {
+    font-size: 0.5rem;
+}
+
+.alinear {
+    text-align: center;
+}
+
+.alinear-fondo {
+    text-align: end;
+}
+
+.dark {
+    background-color: rgb(3, 3, 3);
+    color: rgb(3, 40, 255);
+}
+
+.light {
+    background-color: rgb(186, 188, 188);
+    color: black;
+}
+
+.Derecha {
+    text-align: right;
+}
+
+.abajo {
+
+    text-align: center;
+
+
+}
+
+table, td{
+    color: red;
+    background-color: green;
+}
+
+.card {
+    padding: 10px;
+    margin: 20px;
+}
+
+.TextoOrg {
+    text-align: left;
+}
+
+.Tamaño{
+    height: 100px;
+    width:  135px;
+    overflow: hidden;
+}
